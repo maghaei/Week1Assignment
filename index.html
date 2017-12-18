@@ -9,7 +9,16 @@
   <body ng-controller="eatAppController">
 <h1>This app checks the items you eat during your lunch and worns you if you
 are eating more than 3 items.</h1>
-<input name="" ng-model="items">
-<button type="button" name="Check if Too Much" ng-click="checkItems()"></button>
+<div class="">
+  <input name="" ng-model="items">
+</div>
+<div class="">
+  {{message}}
+</div>
+<br>
+<div class="">
+  <button type="button" name="btnCheckItems"
+          ng-click="checkItems();">Check if Too Much</button>
+</div>
   </body>
 </html>
